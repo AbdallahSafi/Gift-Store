@@ -12,7 +12,8 @@
       <nav>
         <a href="#"><h1>Giftsa</h1></a>
         <ul>
-          <li><button href="#">cart</button></li>
+          <li><p id='welcom'>Hello, <span id='name'>Ahmed</span></p></li>
+          <li><button onclick="clearCart()">cart <span id="cartItems"></span></button></li>
           <li><a href="#">contact</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Product</a></li>
@@ -68,7 +69,9 @@
         </section>
 
         <!-- Featured Products -->
+
         <div class="bg-light-rose">
+          
           <section class="Product-container">
             <h2 class="Product-title">Featured Products</h2>
             <p class="Product-subtitle">Check out new and popular products</p>
@@ -81,6 +84,7 @@
                 />
                 <h3 class="Product-name-price">Pink Color Bracelet</h3>
                 <p>$ 50.00 USD</p>
+                <button id="myBtn" class="Product-button" onclick="addToCart()">Add to cart</button>
               </li>
               <li>
                 <img
@@ -90,6 +94,7 @@
                 />
                 <h3>Love Heaet Bracelet</h3>
                 <p>$ 40.00 USD</p>
+                <button class="Product-button" onclick="addToCart()" >Add to cart</button>
               </li>
               <li>
                 <img
@@ -99,6 +104,7 @@
                 />
                 <h3>Golden Ring</h3>
                 <p>$ 60.00 USD</p>
+                <button class="Product-button" onclick="addToCart()">Add to cart</button>
               </li>
             </ul>
           </section>
@@ -127,5 +133,6 @@
     <footer>
       © 2020 Giftsa Inc. All rights reserved. Privacy Policy
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
