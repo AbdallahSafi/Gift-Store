@@ -14,7 +14,9 @@ var color = prompt("Color Your Name");
 
 var nameElement = document.getElementById("name");
 var welcom = document.getElementById("welcom");
-welcom.style.display = "block";
+if (name !== '') {
+  welcom.style.display = "block";
+}
 nameElement.innerHTML = name;
 nameElement.style.color = color;
 
