@@ -4,92 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giftsa Store</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Header Section & navbar -->
     <header>
       <nav>
         <h1>Giftsa</h1>
         <ul>
-          <li><a href="">Product</a></li>
+          <li><button href="">cart</button></li>
+          <li><a href="">contact</a></li>
           <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><button>Cart</button></li>
+          <li><a href="">Product</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <article>
         <!-- Welcome Section -->
-        <section>
-          <img src="assets/imgs/welcome.jpg" alt="welcome" />
-          <h2>Find The Perfect Gift</h2>
-          <p>we've selected the best gift ideas for every occasion</p>
-          <button>Explore</button>
+        <section class="welcome-container">
+          <img
+            class="welcome-image"
+            src="assets/imgs/welcome.jpg"
+            alt="welcome"
+          />
+          <div class="welcome-content">
+            <h2>Find The Perfect Gift</h2>
+            <p>we've selected the best gift ideas for every occasion</p>
+            <button class="welcome-button">Explore</button>
+          </div>
         </section>
 
         <!-- a breif about the company -->
-        <section>
-          <h2>Giftsa</h2>
-          <p>Online Gift Store</p>
+        <section class="breif-container">
+          <h2 class="breif-title">Giftsa</h2>
+          <p class="breif-paragraph">Online Gift Store</p>
           <hr />
-          <p>
-            Shop Giftsa for thousands of unique and interesting gift ideas,
-            whether you’re looking for something quirky, thoughtful or romantic.
-            You’ll find gifts to celebrate big, important milestone days like
-            weddings, graduations, retirements and anniversaries—and, of course,
-            birthdays. You’ll also find thank-you gifts, housewarming gifts,
-            hostess gifts, teacher appreciation gifts and religious gifts
-            perfect for baptisms, confirmations and first communions.
-          </p>
-          <p>
-            Giftsa is here to offer ideas and solutions for every budget, for
-            every stage of your life, starting with new babies and gifts for
-            kids. We have tons of gifts for the women in your life—best friends,
-            sisters, moms, daughters and grandmas—as well as gifts for him
-          </p>
+          <div class="flex-container">
+            <div class="block-style breif-paragraph1">
+              <p class="breif-paragraph">
+                Shop Giftsa for thousands of unique and interesting gift ideas,
+                whether you’re looking for something quirky, thoughtful or
+                romantic. You’ll find gifts to celebrate big, important
+                milestone days like weddings, graduations, retirements and
+                anniversaries and, of course, birthdays. You’ll also find thank
+                you gifts, housewarming gifts, hostess gifts, teacher
+                appreciation gifts and religious gifts perfect for baptisms,
+                confirmations and first communions.
+              </p>
+            </div>
+            <div class="block-style breif-paragraph2">
+              <p class="breif-paragraph">
+                Giftsa is here to offer ideas and solutions for every budget,
+                for every stage of your life, starting with new babies and gifts
+                for kids. We have tons of gifts for the women in your life best
+                friends, sisters, moms, daughters and grandmas as well as gifts
+                for him. You’ll also find thank you gifts, housewarming gifts,
+                hostess gifts, teacher appreciation gifts and religious gifts
+                perfect for baptisms, confirmations and first communions.
+              </p>
+            </div>
+          </div>
         </section>
 
         <!-- Featured Products -->
-        <section>
-          <h2>Featured Products</h2>
-          <p>Check out new and popular products</p>
-          <ul>
-            <li>
-              <img src="assets/imgs/gift1.jpg" alt="Gift 1" />
-              <h3>Pink Color Bracelet</h3>
-              <p>$ 50.00 USD</p>
-            </li>
-            <li>
-              <img src="assets/imgs/gift2.jpg" alt="Gift 2" />
-              <h3>Love Heaet Bracelet</h3>
-              <p>$ 40.00 USD</p>
-            </li>
-            <li>
-              <img src="assets/imgs/gift3.jpg" alt="Gift 3" />
-              <h3>Golden Ring</h3>
-              <p>$ 60.00 USD</p>
-            </li>
-          </ul>
-        </section>
-
+        <div class="bg-light-rose">
+          <section class="Product-container">
+            <h2 class="Product-title">Featured Products</h2>
+            <p class="Product-subtitle">Check out new and popular products</p>
+            <ul class="flex-container Product-list">
+              <li>
+                <img
+                  class="Product-img"
+                  src="assets/imgs/gift1.jpg"
+                  alt="Gift 1"
+                />
+                <h3 class="Product-name-price">Pink Color Bracelet</h3>
+                <p>$ 50.00 USD</p>
+              </li>
+              <li>
+                <img
+                  class="Product-img"
+                  src="assets/imgs/gift2.jpg"
+                  alt="Gift 2"
+                />
+                <h3>Love Heaet Bracelet</h3>
+                <p>$ 40.00 USD</p>
+              </li>
+              <li>
+                <img
+                  class="Product-img"
+                  src="assets/imgs/gift3.jpg"
+                  alt="Gift 3"
+                />
+                <h3>Golden Ring</h3>
+                <p>$ 60.00 USD</p>
+              </li>
+            </ul>
+          </section>
+        </div>
         <!-- Newsletter Form -->
-        <section>
-          <h2>Monthly Newsletter</h2>
-          <p>
+        <section class="Newsletter-container">
+          <h2 class="Newsletter-title">Monthly Newsletter</h2>
+          <p class="Newsletter-subtitle">
             Sign up to receive updates from our shop, including new tea
             selections and upcoming events.
           </p>
-          <form>
-            <input type="text" id="emai" name="emai" placeholder="Enter Your Email"/>
-            <button type="submit">Submit</button>
-          </form>
+          <div >
+            <form class="Newsletter-form">
+              <input
+                type="text"
+                id="emai"
+                name="emai"
+                placeholder="Enter Your Email"
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
         </section>
       </article>
     </main>
     <footer>
-        © 2020 Giftsa Inc. All rights reserved. Privacy Policy
+      © 2020 Giftsa Inc. All rights reserved. Privacy Policy
     </footer>
   </body>
 </html>
