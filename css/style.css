@@ -156,7 +156,7 @@ header nav ul li button:active {
 /* A breif Section */
 
 .breif-container {
-  margin: 0 70px;
+  margin: 0 130px;
 }
 
 .breif-title {
@@ -173,12 +173,12 @@ header nav ul li button:active {
 
 .breif-paragraph1 {
   margin-right: 30px;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .breif-paragraph2 {
   margin-left: 30px;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .flex-container {
@@ -193,7 +193,7 @@ header nav ul li button:active {
 
 /* Featured Product Section */
 .Product-container {
-  margin: 0 70px;
+  margin: 0 130px;
 }
 .bg-light-rose {
   background-color: #feeeee;
@@ -240,7 +240,7 @@ header nav ul li button:active {
 
 /* Newsletter Section */
 .Newsletter-container {
-  margin: 0 70px;
+  margin: 0 130px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
