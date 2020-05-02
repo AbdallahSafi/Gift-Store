@@ -85,12 +85,10 @@ function addItems() {
   );
   var giftNumber = prompt("Please type how many items inside this gift", "7");
   var confirmRepeating = confirm(
-    "How many times do you want to repeat the gift؟",
-    "3"
-  );
+    "Do you want to repeat the gift؟");
   if (confirmRepeating) {
     var reapeatingCount = prompt(
-      "How many times do you want to reapeat this Gift"
+      "How many times do you want to reapeat this Gift", "3"
     );
   }
 
