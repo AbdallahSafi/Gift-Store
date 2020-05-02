@@ -40,8 +40,8 @@ function addToCart(id) {
 to input a name and a color. then it will the name appear in the top right corner with the color that user typed */
 
 function welcome() {
-  var name = prompt("Enter Your Name","Guest");
-  var color = prompt("Color Your Name","red");
+  var name = prompt("Enter Your Name", "Guest");
+  var color = prompt("Color Your Name", "red");
 
   var nameElement = document.getElementById("name");
   var welcom = document.getElementById("welcom");
@@ -84,13 +84,7 @@ function addItems() {
     "https://www.rd.com/wp-content/uploads/2016/10/01-gag-gifts-send-wrong-message-80459669-chaiyon021.jpg"
   );
   var giftNumber = prompt("Please type how many items inside this gift", "7");
-  var confirmRepeating = confirm(
-    "Do you want to repeat the gift؟");
-  if (confirmRepeating) {
-    var reapeatingCount = prompt(
-      "How many times do you want to reapeat this Gift", "3"
-    );
-  }
+  var reapeatingCount = prompt("How many times do you want to reapeat this Gift","3");
 
   for (var i = 1; i <= reapeatingCount; i++) {
     var productId = 3 + i;
