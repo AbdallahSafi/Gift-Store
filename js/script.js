@@ -13,7 +13,7 @@ function addToCart(id) {
   //Get number of items for a specfice gift that we have on the shop
   var giftItems = Number(document.getElementById(id).innerHTML);
   if (giftItems == 0) {
-    alert('There is no items left')
+    alert("There is no items left");
     return;
   }
   //Get the number of items that the user want to buy
@@ -40,13 +40,13 @@ function addToCart(id) {
 to input a name and a color. then it will the name appear in the top right corner with the color that user typed */
 
 function welcome() {
-  var name = prompt("Enter Your Name");
-  var color = prompt("Color Your Name");
+  var name = prompt("Enter Your Name","Guest");
+  var color = prompt("Color Your Name","red");
 
   var nameElement = document.getElementById("name");
   var welcom = document.getElementById("welcom");
 
-  if (name !== "" ) {
+  if (name !== "") {
     welcom.style.display = "block";
   }
   nameElement.innerHTML = name;
@@ -77,11 +77,17 @@ function clearCart() {
 }
 
 function addItems() {
-  var giftName = prompt("Please type a name for this Gift");
-  var giftPrice = prompt("Please type a price for this Gift");
-  var giftImage = prompt("Please provide an Image URL for this Gift");
-  var giftNumber = prompt("Please type how many items inside this gift");
-  var confirmRepeating = confirm("Do you want to reapeat this Gift");
+  var giftName = prompt("Please type a name for this Gift", "Gift Name");
+  var giftPrice = prompt("Please type a price for this Gift", "40");
+  var giftImage = prompt(
+    "Please provide an Image URL for this Gift",
+    "https://www.rd.com/wp-content/uploads/2016/10/01-gag-gifts-send-wrong-message-80459669-chaiyon021.jpg"
+  );
+  var giftNumber = prompt("Please type how many items inside this gift", "7");
+  var confirmRepeating = confirm(
+    "How many times do you want to repeat the gift؟",
+    "3"
+  );
   if (confirmRepeating) {
     var reapeatingCount = prompt(
       "How many times do you want to reapeat this Gift"
