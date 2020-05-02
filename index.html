@@ -71,20 +71,20 @@
         <!-- Featured Products -->
 
         <div class="bg-light-rose">
-          
+          <button id ='add-gift'class="Product-add-button" onclick="addItems()">Add Gifts</button>
           <section class="Product-container">
             <h2 class="Product-title">Featured Products</h2>
             <p class="Product-subtitle">Check out new and popular products</p>
-            <ul class="flex-container Product-list">
+            <ul id="gift-list" class="Product-list">
               <li>
                 <img
                   class="Product-img"
                   src="assets/imgs/gift1.jpg"
                   alt="Gift 1"
                 />
-                <h3 class="Product-name-price">Pink Color Bracelet</h3>
+                <h3>Pink Color Bracelet <span id ='product1'>7</span></h3>
                 <p>$ 50.00 USD</p>
-                <button id="myBtn" class="Product-button" onclick="addToCart()">Add to cart</button>
+                <button id="myBtn" class="Product-button" onclick="addToCart('product1')">Add to cart</button>
               </li>
               <li>
                 <img
@@ -92,9 +92,9 @@
                   src="assets/imgs/gift2.jpg"
                   alt="Gift 2"
                 />
-                <h3>Love Heaet Bracelet</h3>
+                <h3>Love Heaet Bracelet <span id ='product2'>5</span></h3>
                 <p>$ 40.00 USD</p>
-                <button class="Product-button" onclick="addToCart()" >Add to cart</button>
+                <button class="Product-button" onclick="addToCart('product2')" >Add to cart</button>
               </li>
               <li>
                 <img
@@ -102,9 +102,9 @@
                   src="assets/imgs/gift3.jpg"
                   alt="Gift 3"
                 />
-                <h3>Golden Ring</h3>
+                <h3>Golden Ring <span id ='product3'>4</span></h3>
                 <p>$ 60.00 USD</p>
-                <button class="Product-button" onclick="addToCart()">Add to cart</button>
+                <button class="Product-button" onclick="addToCart('product3')">Add to cart</button>
               </li>
             </ul>
           </section>
