@@ -79,7 +79,7 @@ function clearCart() {
 function addItems() {
   var giftName = prompt("Please type a name for this Gift");
   var giftPrice = prompt("Please type a price for this Gift");
-  var giftImage = prompt("Please provide an Image for this Gift");
+  var giftImage = prompt("Please provide an Image URL for this Gift");
   var giftNumber = prompt("Please type how many items inside this gift");
   var confirmRepeating = confirm("Do you want to reapeat this Gift");
   if (confirmRepeating) {
